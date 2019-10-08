@@ -1,6 +1,6 @@
 #ifndef CUT_POSITION
 #define CUT_POSITION
-#include "./radixStructure.hpp"
+#include "radixStructure.hpp"
 
 uint32_t getCutPosition(RadixNode *crawl, string key) {
     uint32_t index = 0;

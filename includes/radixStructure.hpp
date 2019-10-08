@@ -1,6 +1,6 @@
 #ifndef Radix_
 #define Radix_
-#include "./baseInclude.hpp"
+#include "baseInclude.hpp"
 
 namespace RAX {
 class RadixNode {

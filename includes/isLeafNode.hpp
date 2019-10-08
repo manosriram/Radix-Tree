@@ -2,7 +2,7 @@
 #define IS_LAST
 #include "baseInclude.hpp"
 
-bool isLastNode(RadixNode *root) {
+bool isLeafNode(RadixNode *root) {
     for (uint32_t t = 0; t < 26; t++) {
         if (root->children[t])
             return false;

@@ -1,12 +1,12 @@
 #ifndef SPLIT
 #define SPLIT
-#include "./baseInclude.hpp"
-#include "./isLast.hpp"
-#include "./moveChildNodes.hpp"
+#include "baseInclude.hpp"
+#include "isLeafNode.hpp"
+#include "moveChildNodes.hpp"
 
 RadixNode *splitNodes(RadixNode *&root, string left, uint32_t pos) {
     bool hasChildren = false;
-    if (!isLastNode(root))
+    if (!isLeafNode(root))
         hasChildren = true;
 
     string right;
