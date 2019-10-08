@@ -6,11 +6,13 @@
 
 ```cpp
 
-Insert(word, node);  // Insert a word into node.
+Insert(word, node);  // Insert a word into node. (RadixNode *)
 
-isLeafNode(node);  // Check if Node is Lead or Not.
+isLeafNode(node);  // Check if Node is Lead or Not. (Boolean)
 
-Traverse(node);  // Traverse the Tree starting from node.
+Traverse(node);  // Traverse the Tree starting from node. (Void)
+
+Find(node, word); // Search for a word in the Tree. (Boolean)
 
 ```
 
@@ -33,6 +35,7 @@ int main() {
     Insert("rubicundus", root);
     
     Traverse(root);
+    cout << Find(root, "ruber") << endl;
 }
 ```
 
