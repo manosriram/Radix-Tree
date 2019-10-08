@@ -13,7 +13,7 @@ int main() {
     Insert("rubicon", root);
     Insert("rubicundus", root);
     
-    cout << endl;
     Traverse(root);
     cout << endl;
+    cout << Find(root, "ruber") << endl;
 }

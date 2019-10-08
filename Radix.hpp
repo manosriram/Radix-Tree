@@ -6,5 +6,6 @@
 #include "includes/split.hpp"
 #include "includes/traverseTree.hpp"
 #include "includes/insertWord.hpp"
+#include "includes/findWord.hpp"
 
 #endif
