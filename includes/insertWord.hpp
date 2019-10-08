@@ -2,9 +2,9 @@
 #define INS_WRD
 #include "baseInclude.hpp"
 
-void Insert(string key, RadixNode *&root) {
+RadixNode *Insert(string key, RadixNode *&root) {
     if (key.length() == 0)
-        return;
+        return root;
 
     uint32_t pos;
     RadixNode *crawl = root;
@@ -24,7 +24,7 @@ void Insert(string key, RadixNode *&root) {
     } else {
         crawl->children[ind] = new RadixNode(key, true);
     }
-    return;
+    return crawl;
 }
 
 #endif
